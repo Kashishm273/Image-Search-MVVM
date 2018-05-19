@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kashish.sample.ui.searchImages.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/background_search">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp12"
+            android:layout_toStartOf="@+id/ivSearch"
+            android:background="@drawable/background_search"
+            android:hint="@string/search_for_images"
+            android:inputType="textCapSentences"
+            android:maxLength="50"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp12"
+            android:src="@drawable/ic_search"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlRecentSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSearch"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/background_search">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRecentSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

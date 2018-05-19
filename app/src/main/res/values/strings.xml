@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Image Search</string>
+    <string name="search_for_images">Search for images</string>
+    <string name="two">2 columns</string>
+    <string name="three">3 columns</string>
+    <string name="four">4 columns</string>
+    <string name="enter_text">Enter text</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_images">No images found. Go online to view images</string>
+    <string name="no_of_columns">No of columns</string>
+    <string name="press_back">Press back again to exit</string>
+    <string name="android">Android</string>
+    <string name="no_images_found">No images found</string>
+</resources>
