@@ -247,8 +247,7 @@ class MainActivity : AppCompatActivity(), ViewImagesContract.View, View.OnClickL
         intent.putParcelableArrayListExtra(Constants.LIST, photosList)
 
         val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,
-                ivImage,
-                position.toString())
+                ivImage, position.toString())
         startActivity(intent, options.toBundle())
     }
 
