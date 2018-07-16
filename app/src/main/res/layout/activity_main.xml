@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.viewImages.MainActivity">
+    tools:context=".ui.viewImages.ViewImagesActivity">
 
     <RelativeLayout
         android:id="@+id/rlSearch"
@@ -15,24 +15,25 @@
         android:layout_marginTop="@dimen/dp16"
         android:background="@drawable/background_search">
 
-        <TextView
-            android:textSize="@dimen/sp14"
-            android:id="@+id/tvSearch"
+        <EditText
+            android:imeOptions="actionDone"
+            android:id="@+id/etSearch"
             android:layout_width="match_parent"
-            android:layout_marginStart="@dimen/dp12"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp12"
             android:layout_toStartOf="@+id/ivSearch"
-            android:textColor="@color/black"
             android:background="@drawable/background_search"
-            android:hint="@string/search_for_images" />
+            android:hint="@string/search_for_images"
+            android:inputType="textCapSentences"
+            android:maxLength="50"
+            android:maxLines="1" />
 
         <ImageView
             android:id="@+id/ivSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:padding="@dimen/dp12"
             android:src="@drawable/ic_search"
             tools:ignore="ContentDescription" />

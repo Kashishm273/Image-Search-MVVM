@@ -11,4 +11,5 @@
     <string name="press_back">Press back again to exit</string>
     <string name="android">Android</string>
     <string name="no_images_found">No images found</string>
+    <string name="no_internet_connection">No internet connection!</string>
 </resources>
